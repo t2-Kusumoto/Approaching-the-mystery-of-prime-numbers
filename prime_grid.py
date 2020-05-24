@@ -42,7 +42,7 @@ def make_arr(num, w_h, center, line):
             arr[now[0]-1][now[1]] = line[i]
             now = (now[0]-1, now[1])
 
-#     不要な行、列の削除
+#   不要な行、列の削除
     arranged_arr = np.delete(np.delete(arr, w_h, 0), w_h, 1)
     return arranged_arr
 
@@ -111,16 +111,9 @@ def draw(grid):
         pygame.display.update()
         fpsclock.tick(10)
 
-# def main(num):
-#     """ main routine"""
-#     prime = choice_prime_num(np.arange(0, num))
-#     grid = make_grid(num, prime)
-#     draw(grid)
 
 if __name__ == '__main__':
     num = 256
     prime = choice_prime_num(np.arange(0, num))
     grid = make_grid(num, prime)
     draw(grid)
-
-    # main(NUM)

@@ -60,4 +60,4 @@ user-agent : conda/4.8.3 requests/2.23.0 CPython/3.7.7 Linux/5.4.3-050403-generi
 | file | description |
 | --- | --- |
 | [No1_play_with_prime_numbers.ipynb](No1_play_with_prime_numbers.ipynb)| x,y座標上に渦巻き型に整数を配置してみました。<br> 三角関数, $\pi$, $e$を思いつくままにテキトーに組み合わせて`matplotlib`で描画しています。|
-| [No2_play_with_prime_numbers.ipynb](No2_play_with_prime_numbers.ipynb)| |
+| [No2_play_with_prime_numbers.ipynb](No2_play_with_prime_numbers.ipynb)|No1ファイルでやったことに、さらに虚数をテキトーに組み合わせます。<br>三次元空間に整数や素数をプロットして、回転させて観察できるようにしました。 |
