@@ -8,12 +8,35 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pygame
 from pygame.locals import QUIT
-import choice_prime_number as cpn
+
+
+def choice_prime_num(arr):
+    """np.array(0, num)を受け取って素数の配列を返す"""
+    if isinstance(arr, np.ndarray):
+        arr = arr.tolist()
+    if 0 in arr:
+        arr.remove(0)
+    if 1 in arr:
+        arr.remove(1)
+    prime = []
+    _min = min(arr)
+    _max = max(arr)
+    while _min <= np.sqrt(_max):
+        _min = min(arr)
+        prime.append(_min)
+        for i in arr:
+            if i != _min and i % _min == 0:
+                arr.remove(i)
+        arr.remove(_min)
+    prime.extend(arr)
+
+    return prime
 
 N = 400
 size = np.arange(0, N)
-
-prime = cpn.choice_prime_num(size)
+prime = choice_prime_num(size)
+radius = lambda a: np.sqrt(a)*np.e
+data = np.empty(len(size), dtype=object)
 
 #rad = np.e / 2*np.pi
 #rad = np.e / np.e**(-2*np.pi)
@@ -21,9 +44,6 @@ rad = 2*np.pi / np.e
 #rad = 2*np.pi**np.e / np.e**(-2*np.pi)
 #rad = np.pi**np.e / np.e**(-np.pi)
 #rad = np.pi**np.e / np.e**(np.pi)
-radius = lambda a: np.sqrt(a)*np.e
-
-data = np.empty(len(size), dtype=object)
 
 plot_x = []
 plot_y = []
@@ -36,7 +56,7 @@ for i in size:
     data[i] = {'num':i, 'point':(x, y)}
 
 def draw(data, prime):
-    """ draw grid"""
+    """draw grid"""
     window_size = 800
     pygame.init()
     surface = pygame.display.set_mode((window_size, window_size))

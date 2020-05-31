@@ -1,9 +1,11 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import sys
 import numpy as np
 import pygame
 from pygame.locals import QUIT, Rect
+
 
 def make_line(num, prime, w_h):
     """各数値が素数か否かの情報を格納した１次元配列を生成"""
@@ -13,8 +15,9 @@ def make_line(num, prime, w_h):
         line[i] = data
     return line
 
+
 def make_arr(num, w_h, center, line):
-    """ 0を中央とし、逆時計回りに各数値を配置した２次元配列の生成"""
+    """0を中央とし逆時計回りに各数値を配置した２次元配列の生成"""
     #後のif文を回すために行、列ともに1ずつ大きな配列を作る
     arr = np.empty((w_h+1, w_h+1), dtype=object)
     # 0, 1, 2 は予め配置しておく
@@ -42,12 +45,13 @@ def make_arr(num, w_h, center, line):
             arr[now[0]-1][now[1]] = line[i]
             now = (now[0]-1, now[1])
 
-#   不要な行、列の削除
+    # 不要な行、列の削除
     arranged_arr = np.delete(np.delete(arr, w_h, 0), w_h, 1)
     return arranged_arr
 
+
 def make_grid(num, prime):
-    """ 描画の元となる配列を作成するための各関数の呼び出し"""
+    """描画の元となる配列を作成するための各関数の呼び出し"""
     w_h = int(np.ceil(np.sqrt(num)))
     wh_half = w_h // 2
     center = (wh_half, wh_half) if w_h**2 % 2 == 1 \
@@ -57,8 +61,9 @@ def make_grid(num, prime):
     arr = make_arr(num, w_h, center, line)
     return arr
 
+
 def choice_prime_num(arr):
-    """ np.array(0, num)を受け取って素数の配列を返す"""
+    """np.array(0, num)を受け取って素数の配列を返す"""
     if isinstance(arr, np.ndarray):
         arr = arr.tolist()
     if 0 in arr:
@@ -79,8 +84,9 @@ def choice_prime_num(arr):
 
     return prime
 
+
 def draw(grid):
-    """ draw grid"""
+    """draw grid"""
     window_size = 600
     pygame.init()
     surface = pygame.display.set_mode((window_size, window_size))
@@ -113,7 +119,7 @@ def draw(grid):
 
 
 if __name__ == '__main__':
-    num = 256
-    prime = choice_prime_num(np.arange(0, num))
-    grid = make_grid(num, prime)
+    NUM = 256
+    prime = choice_prime_num(np.arange(0, NUM))
+    grid = make_grid(NUM, prime)
     draw(grid)
