@@ -1,6 +1,6 @@
 # What happens to the placement of prime numbers in unfounded expressions?
 
-## ※ 現在製作中!
+
 
 ![sample gif](./img/sample.gif)  
 
