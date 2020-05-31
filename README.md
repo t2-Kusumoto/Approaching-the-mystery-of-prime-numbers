@@ -22,7 +22,7 @@ _An integer from 0 to 40000_
 ![grid Image 1](./img/re_grid_1.png)  
 
 ･･･で、これを見た時、「パターンを替えたら素数の配置はどんな模様を描くのだろう？」と、思ってしまったわけです。  
-「思ってしまった」なら、やってみない手はありませんよね？今の御時世、パソコンさえありゃ、試してみることが出来ますし。  
+「思ってしまった」なら、やってみない手はありませんよね？今の御時世、パソコンさえありゃ、試してみることが出来るのですから。  
 
 そんなわけで「**数学的意味とかそういったことはまるっきり抜きにして**、取り敢えずアレコレやってみよう！」  ってノリで始めて、アレコレ出てきた結果を集めたものがこのリポジトリです。  
 
@@ -62,9 +62,9 @@ user-agent : conda/4.8.3 requests/2.23.0 CPython/3.7.7 Linux/5.4.3-050403-generi
 
 | file | image |description |
 | --- | --- | --- |
-| [No1_play_with_prime_numbers.ipynb](No1_play_with_prime_numbers.ipynb)| ![file 01 image](./img/pict_file1.png)| x,y座標上に渦巻き型に整数を配置してみました。<br> 三角関数, 円周率, ネイピア数を思いつくままにテキトーに組み合わせて`matplotlib`で描画しています。|
+| [No1_play_with_prime_numbers.ipynb](No1_play_with_prime_numbers.ipynb)| ![file 01 image](./img/pict_file1.png)| xy座標上に渦巻き型に整数を配置してみました。<br> 三角関数, 円周率, ネイピア数を思いつくままにテキトーに組み合わせて`matplotlib`で描画しています。|
 | [No2_play_with_prime_numbers.ipynb](No2_play_with_prime_numbers.ipynb)| ![file 02 image](./img/pict_file2.png)|No1ファイルでやったことに、さらに虚数をテキトーに組み合わせます。<br>三次元空間に整数や素数をプロットして、回転させて観察できるようにしました。 |
 | [No3_play_with_prime_numbers.ipynb](No3_play_with_prime_numbers.ipynb)| ![file 03 image](./img/pict_file3.png)| 渦巻状に配置された、 xy平面上の点、(n×cosθ, n×sinθ)を、中心点から各点へのベクトルに垂直な複素平面でさらにcos + i sinθの位置まで動かしてプロットしていきます |
 | [No4_play_with_prime_numbers.ipynb](No4_play_with_prime_numbers.ipynb)| ![file 04 image](./img/pict_file4.png)| 回転の要領はNo3ファイルと同じで、複素数を生成する式を変更し、さらにそれらの実数部、虚数部を（それぞれに対応した数で）整数倍します。 |
 | [No5_play_with_prime_numbers.ipynb](No5_play_with_prime_numbers.ipynb)| ![file 05 image](./img/pict_file5.png)| No.4では、複素平面をベクトル (𝑥,𝑦) に直交するように配置しましたが、今回はベクトルと同じ直線上にxy平面と直交するように配置してプロットする点を移動させます。 |
-| [No6_play_with_prime_numbers.ipynb](No6_play_with_prime_numbers.ipynb)| ![file 06 image](./img/pict_file6_1.png) ![file 06 image](./img/pict_file6_2.png)| 「ウラムの螺旋を模倣する」コンセプトからは外ているが、パターンが面白いので残しておいたもの。<br>結構面白いパターンが出現しています。|
+| [No6_play_with_prime_numbers.ipynb](No6_play_with_prime_numbers.ipynb)| ![file 06 image](./img/pict_file6_1.png) ![file 06 image](./img/pict_file6_2.png)| 「ウラムの螺旋を模倣する」コンセプトからは外れているが、パターンが面白いので残しておいたもの。<br>結構面白いパターンが出現しています。|
