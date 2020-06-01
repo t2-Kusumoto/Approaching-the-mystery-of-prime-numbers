@@ -1,6 +1,7 @@
-# What happens to the placement of prime numbers in unfounded expressions?
+# 何ら根拠のないルールに則って整数を並べた時、素数はどのような形に並ぶのだろうか？
+## 「ウラムの螺旋」の真似事をして遊んでみる。
 
-
+---  
 
 ![sample gif](./img/sample.gif)  
 
