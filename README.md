@@ -1,5 +1,7 @@
 # 何ら根拠のないルールに則って整数を並べた時、素数はどのような形に並ぶのだろうか？
-## 「ウラムの螺旋」の真似事をして遊んでみる。
+## 「ウラムの螺旋」の真似事をして遊んでみる。  
+
+**[The English version of the README is here.](README_en.md)** (Machine translated)  
 
 ---  
 
