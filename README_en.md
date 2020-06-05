@@ -1,5 +1,7 @@
 # What happens to the placement of prime numbers in unfounded expressions?
 
+![sample gif](./img/sample.gif)  
+
 ### Q: What is this repository?  
 ### A: Mimicking the "Ulam spiral", observe how prime numbers are arranged when integer values ​​are plotted according to a simple rule.
 
@@ -11,7 +13,7 @@
 This seems to say something like the image below.
 - Place a "0" in the center of the grid.
 - Plot the integers counterclockwise around that point.
-- Allows the position of prime numbers to be - distinguished from other numbers (for example, by color coding).  
+- Allows the position of prime numbers to be distinguished from other numbers (for example, by color coding).  
 
 _An integer from 0 to 64_  
 ![grid Image 2](./img/re_grid_2.png)
@@ -38,7 +40,7 @@ Thankfully, these days it's easy to try it out even with the cheap computer I us
 
 ## Local environment  
 
-I have anaconda installed on ubuntu.  
+I have `anaconda` installed on `ubuntu`.  
 All you really need is Python3 and the following modules:  
 
 - numpy
@@ -67,7 +69,7 @@ _It may take some time before it is displayed._
 
 | file | image |description |
 | --- | --- | --- |
-| [No1_play_with_prime_numbers.ipynb](No1_play_with_prime_numbers.ipynb)| ![file 01 image](./img/pict_file1.png)| I tried to arrange the integers in a spiral shape on the xy coordinates.<br> (simply in the form I came up with) <br>CombineTrigonometric function, Pi and Napier number and draw the result in "matplotlib".|
+| [No1_play_with_prime_numbers.ipynb](No1_play_with_prime_numbers.ipynb)| ![file 01 image](./img/pict_file1.png)| I tried to arrange the integers in a spiral shape on the xy coordinates.<br> (simply in the form I came up with) <br>Combine Trigonometric function, Pi and Napier number and draw the result in "matplotlib".|
 | [No2_play_with_prime_numbers.ipynb](No2_play_with_prime_numbers.ipynb)| ![file 02 image](./img/pict_file2.png)|Combine the imaginary number with the contents of the No.1 file. (This is also a vague idea. There is no "reason")<br>It is plotted in 3D space so you can see it from different angles (when run in a local "jupyter notebook"). |
 | [No3_play_with_prime_numbers.ipynb](No3_play_with_prime_numbers.ipynb)| ![file 03 image](./img/pict_file3.png)| Move the spirally arranged points (n×cos θ, n×sin θ) on the xy plane to the position of cos +isin θ on the complex plane perpendicular to the vector from the center point to each point and plot it. |
 | [No4_play_with_prime_numbers.ipynb](No4_play_with_prime_numbers.ipynb)| ![file 04 image](./img/pict_file4.png)| The procedure of rotation is the same as the procedure of No3 file, the formulas for generating complex numbers are changed, and their real and imaginary parts are multiplied by an integer (corresponding number). |
